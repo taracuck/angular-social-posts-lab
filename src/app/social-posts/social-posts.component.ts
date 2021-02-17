@@ -36,7 +36,7 @@ export class SocialPostsComponent implements OnInit {
     if (post.thought !== '') {
       this.posts.push(post);
     }
-    this.newThought = false;
+    this.closeForm();
   };
 
   newThoughtAdd = () => {
