@@ -1,0 +1,18 @@
+<app-header></app-header>
+<main class="page-contents">
+  <button class="new-thought-button" (click)="newThoughtAdd()">
+    New Thought
+  </button>
+  <app-post-form
+    *ngIf="newThought"
+    (submitted)="onAdd($event)"
+    (closed)="closeForm()"
+  ></app-post-form>
+  <ul class="posts-list">
+    <app-post
+      *ngFor="let post of posts; index as i"
+      [postObject]="post"
+      (deleted)="onDelete(i)"
+    ></app-post>
+  </ul>
+</main>

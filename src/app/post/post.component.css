@@ -1,0 +1,12 @@
+.post-content {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f3f1f7;
+  list-style: none;
+}
+
+.post-paragraphs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
