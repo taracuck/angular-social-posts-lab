@@ -7,6 +7,8 @@ import { Post } from '../interfaces/post';
   styleUrls: ['./post.component.css'],
 })
 export class PostComponent implements OnInit {
+  counter: number = 0;
+
   @Input() postObject!: Post;
   @Output() deleted = new EventEmitter<void>();
 
@@ -16,5 +18,9 @@ export class PostComponent implements OnInit {
 
   deletePost = (): void => {
     this.deleted.emit();
+  };
+
+  addUpVote = () => {
+    this.counter++;
   };
 }

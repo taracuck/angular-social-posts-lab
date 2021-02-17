@@ -5,6 +5,18 @@
   list-style: none;
 }
 
+.up-votes {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+
+.fa-thumbs-up {
+  margin-left: 5px;
+  padding: 5px;
+}
+
 .post-paragraphs {
   display: flex;
   flex-direction: column;

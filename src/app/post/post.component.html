@@ -1,9 +1,11 @@
 <li class="post-content">
-  <!-- <div class="post-content"> -->
+  <div class="up-votes">
+    <p *ngIf="counter > 0">{{ counter }}</p>
+    <i class="fas fa-thumbs-up" (click)="addUpVote()"></i>
+  </div>
   <div class="post-paragraphs">
     <h2>{{ postObject.title }}</h2>
     <p>{{ postObject.thought }}</p>
   </div>
   <i class="fas fa-trash" (click)="deletePost()"></i>
-  <!-- </div> -->
 </li>
